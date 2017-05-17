@@ -1,7 +1,7 @@
-Na maturze bardzo wygodnie wczytywaæ 
-plik w podany przeze mnie sposób. 
-W pêtli dostajemy pojedyncze 
-linijki, na których mo¿emy wykonywaæ 
-ró¿ne operacje. Gdyby to by³y liczby, mo¿na zamieniaæ je na 
-binarne lub dziesiêtne, ze s³ów mo¿na od razu robiæ 
+Na maturze bardzo wygodnie wczytywac 
+plik w podany przeze mnie sposob. 
+W petli dostajemy pojedyncze 
+linijki, na ktorych mozemy wykonywac 
+rozne operacje. Gdyby to byly liczby, mozna zamieniac je na 
+binarne lub dziesietne, ze slow mozna od razu robic 
 palindromy i anagramy.

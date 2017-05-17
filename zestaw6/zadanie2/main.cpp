@@ -4,23 +4,32 @@
 #include <vector>
 using namespace std;
 
-class stringiii{
-	public:
-	vector <string> wiersze;
 	
+class stringiii{
+	
+	vector <string> wiersze;
+	public:
 	
 	void dodaj(string Wiersz){
 		wiersze.push_back(Wiersz);
 		
 	}
-	void pokarz(){
+	void pokaz(){
 		cout<<"Zawartosc klasy:"<<endl<<endl;
 		for(int i=0;i<wiersze.size();i++)cout<<wiersze[i]<<endl;
 		cout<<endl;
 	}
+	private:
+	
+	static	bool dlugosci(string a,string b){
+			if(a.length()<b.length())return 1;
+			else return 0;
+		}
+	
+	public:
 	
 	void sortuj(){
-		sort(wiersze.begin(),wiersze.end());
+		sort(wiersze.begin(),wiersze.end(),dlugosci);
 		
 	}
 	void najkrotszy(){
@@ -51,9 +60,9 @@ int main(int argc, char** argv) {
 		
 		plik.close();
 		
-		smoj.pokarz();
+		smoj.pokaz();
 		smoj.sortuj();
-		smoj.pokarz();
+		smoj.pokaz();
 		smoj.najkrotszy();
 	}
 	else cout<<"Nie ma takiego pliku"<<endl;
